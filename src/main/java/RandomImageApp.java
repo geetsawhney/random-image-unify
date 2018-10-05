@@ -1,7 +1,6 @@
 import com.squareup.okhttp.OkHttpClient;
 import com.squareup.okhttp.Request;
 import com.squareup.okhttp.Response;
-
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.awt.image.BufferedImage;
@@ -19,6 +18,7 @@ public class RandomImageApp {
                 .get().build();
 
         String responseInString = null;
+
         int[][] rgbMatrix = new int[128][3];
 
         try {
